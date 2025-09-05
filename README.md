@@ -11,7 +11,7 @@ Create a `.env` file in the root of the project with the following contents:
 ```bash
 PORT="8080"
 ```
-
+This changes into my version of notely app
 Run the server:
 
 ```bash
