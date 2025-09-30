@@ -1,4 +1,7 @@
+
 name: ci
+
+
 
 on:
   pull_request:
@@ -11,7 +14,8 @@ jobs:
 
     steps:
       - name: Check out code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4  #pulls the repo into vm
+
 
       - name: Set up Node
         uses: actions/setup-node@v4
@@ -19,4 +23,11 @@ jobs:
           node-version: 18
 
       - name: Force Failure
-        run: (exit 1)
+        run: exit 1
+
+      - name: Install dependencies
+        run npm ci
+      - name: run tests
+        run: npm run test
+
+
