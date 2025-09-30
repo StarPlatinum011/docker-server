@@ -1,4 +1,7 @@
-it name: ci
+
+name: ci
+
+
 
 on:
   pull_request:
@@ -13,6 +16,7 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v4  #pulls the repo into vm
 
+
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
@@ -25,4 +29,5 @@ jobs:
         run npm ci
       - name: run tests
         run: npm run test
+
 
