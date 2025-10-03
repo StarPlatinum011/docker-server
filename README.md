@@ -1,5 +1,5 @@
 
-https://github.com/starplatinum011/docker-server/actions/workflows/ci/badge.svg
+https://github.com/starplatinum011/docker-server/actions/workflows/ci.yml/badge.svg
 
 
 
