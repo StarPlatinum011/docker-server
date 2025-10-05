@@ -5,8 +5,7 @@ on:
   pull_request:
     branches: [main]
 
-  push:
-    branches: ["*"]
+  
 
 
 jobs:
@@ -25,9 +24,12 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
-        
+
       - name: Format code
         run: npm run format:check
+
+      - name: Linting 
+        run: npm run lint -- --max-warnings=0
 
   tests:
     name: Tests

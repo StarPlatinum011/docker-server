@@ -3,7 +3,7 @@
 
 
 # learn-cicd-typescript-starter (docker-server)
-![Tests](https://github.com/starplatinum011/docker-server/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/starplatinum011/docker-server/actions/workflows/ci.yml/badge.svg?branch=main)
 
 
 
